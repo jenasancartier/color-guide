@@ -1,0 +1,100 @@
+@import "mixins";
+@import "variables";
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+    }
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 65em;
+}
+
+.wrapper:after,
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+
+[class*='column-'] {
+    float: left;
+    width: 25%;
+    min-height: 150px;
+    }
+
+.row {
+  margin: 30px;
+}
+
+.slice {
+  width: 33.333%;
+  height: 100%;
+  float: left;
+  min-height: 150px;
+}
+
+.column-1 {
+  background-color: $mint;
+  .swab-one {
+    background: lighten($mint, 7%);
+  }
+  .swab-two {
+    background: $mint;
+  }
+  .swab-three {
+    background: darken($mint, 7%);
+  }
+}
+
+.column-2 {
+  background-color: $teal;
+  .swab-one {
+    background: lighten($teal, 7%);
+  }
+  .swab-two {
+    background: $teal;
+  }
+  .swab-three {
+    background: darken($teal, 7%);
+  }
+}
+
+.column-3 {
+  background-color: $gold;
+  .swab-one {
+    background: lighten($gold, 7%);
+  }
+  .swab-two {
+    background: $gold;
+  }
+  .swab-three {
+    background: darken($gold, 7%);
+  }
+}
+
+.column-4 {
+  background-color: $tomato;
+  .swab-one {
+    background: lighten($tomato, 7%);
+  }
+  .swab-two {
+    background: $tomato;
+  }
+  .swab-three {
+    background: darken($tomato, 7%);
+  }
+}
