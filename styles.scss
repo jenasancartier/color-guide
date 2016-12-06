@@ -47,6 +47,13 @@ img {
   min-height: 150px;
 }
 
+.mixes {
+  width: 25%;
+  height: 50px;
+  float: left;
+}
+
+
 .column-1 {
   background-color: $mint;
   .swab-one {
@@ -97,4 +104,57 @@ img {
   .swab-three {
     background: darken($tomato, 7%);
   }
+}
+
+.mint-mix-1 {
+  background-color: mix($mint, $mint, $weight:65%)
+}
+.mint-mix-2 {
+  background-color: mix($mint, $teal, $weight:65%)
+}
+.mint-mix-3 {
+  background-color: mix($mint, $gold, $weight:65%)
+}
+.mint-mix-4 {
+  background-color: mix($mint, $tomato, $weight:65%)
+}
+
+
+.teal-mix-1 {
+  background-color: mix($teal, $mint, $weight:65%)
+}
+.teal-mix-2 {
+  background-color: mix($teal, $teal, $weight:65%)
+}
+.teal-mix-3 {
+  background-color: mix($teal, $gold, $weight:65%)
+}
+.teal-mix-4 {
+  background-color: mix($teal, $tomato, $weight:65%)
+}
+
+.gold-mix-1 {
+  background-color: mix($gold, $mint, $weight:65%)
+}
+.gold-mix-2 {
+  background-color: mix($gold, $teal, $weight:65%)
+}
+.gold-mix-3 {
+  background-color: mix($gold, $gold, $weight:65%)
+}
+.gold-mix-4 {
+  background-color: mix($gold, $tomato, $weight:65%)
+}
+
+.tomato-mix-1 {
+  background-color: mix($gold, $mint, $weight:65%)
+}
+.tomato-mix-2 {
+  background-color: mix($tomato, $teal, $weight:65%)
+}
+.tomato-mix-3 {
+  background-color: mix($tomato, $gold, $weight:65%)
+}
+.tomato-mix-4 {
+  background-color: mix($tomato, $tomato, $weight:65%)
 }
